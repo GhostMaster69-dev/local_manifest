@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Trees -->
+ <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="android_11" />
+ <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="android_11" />
+ <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="stable-perf" />
+
+ <!-- Clang-14 Toolchain -->
+ <project path="prebuilts/clang/host/linux-x86/clang-14" name="GhostMaster69-dev/Cosmic-Clang.git" remote="gitlab" revision="main" clone-depth="1" />
+
+ <!-- remove existing hals and add new msm8996-r hals -->
+ <remove-project name="android_hardware_qcom_media" />
+ <remove-project name="android_hardware_qcom_audio" />
+ <remove-project name="android_hardware_qcom_display" />
+ <project path="hardware/qcom-caf/msm8996/display" name="GhostMaster69-dev/hardware_qcom-caf_msm8996-r_display" remote="github" revision="eleven" />
+ <project path="hardware/qcom-caf/msm8996/media" name="GhostMaster69-dev/hardware_qcom-caf_msm8996-r_media" remote="github" revision="eleven" />
+ <project path="hardware/qcom-caf/msm8996/audio" name="GhostMaster69-dev/hardware_qcom-caf_msm8996-r_audio" remote="github" revision="eleven" />
+
+</manifest>
