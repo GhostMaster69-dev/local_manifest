@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- gitlab -->
+ <remote name="cosmic"
+	 fetch="https://gitlab.com/GhostMaster69-dev" />
+
+ <!-- Trees -->
+ <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="syberia/12" />
+ <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="syberia/12" />
+ <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="stable" />
+
+ <!-- Toolchain -->
+ <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="Cosmic-Clang" remote="cosmic" revision="master" clone-depth="1" />
+
+ <!-- Packages -->
+ <project path="packages/apps/CameraGo" name="GhostMaster69-dev/android_packages_apps_CameraGo" remote="github" revision="main" />
+ <project path="packages/apps/FMRadio" name="GhostMaster69-dev/android_packages_apps_FMRadio" remote="github" revision="12" />
+ <project path="vendor/qcom/opensource/libfmjni" name="GhostMaster69-dev/vendor_qcom_opensource_libfmjni" remote="github" revision="twelve" />
+
+ <!-- Sepolicy -->
+ <project path="device/qcom/sepolicy-legacy-um" name="GhostMaster69-dev/android_device_qcom_sepolicy-legacy-um" remote="github" revision="syberia/12" />
+
+</manifest>
