@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- my-github -->
+ <remote name="me"
+	 fetch="https://github.com/GhostMaster69-dev" />
+
+ <!-- AOSP-Silicon -->
+ <remote name="silicon"
+	 fetch="https://github.com/AOSP-Silicon" />
+
+ <!-- Toolchain -->
+ <remote name="cosmic"
+	 fetch="https://gitlab.com/GhostMaster69-dev"
+	 revision="master" />
+
+ <!-- Trees -->
+ <project path="device/xiaomi/vince" name="device_xiaomi_vince" remote="me" revision="12" />
+ <project path="vendor/xiaomi/vince" name="vendor_xiaomi_vince" remote="me" revision="12" />
+ <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="silicon" revision="12" />
+
+ <!-- Cosmic clang Toolchain -->
+ <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="cosmic-clang" remote="cosmic" clone-depth="1" />
+
+ <!-- CameraGo -->
+ <project path="packages/apps/CameraGo" name="android_packages_apps_CameraGo" remote="silicon" revision="12" />
+
+ <!-- AOSP FM -->
+ <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="silicon" revision="12"  />
+ <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" remote="me" revision="lineage-18.1" />
+
+ <!-- Framework -->
+ <remove-project name="frameworks_opt_telephony" />
+ <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="lineage" />
+
+ <!-- Wlan -->
+ <remove-project name="hardware_qcom-caf_wlan" />
+ <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="me" revision="android-12.0-caf-4.9-S" />
+</manifest>
