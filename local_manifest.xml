@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Trees -->
+ <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="ssos-11-new" />
+ <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="ssos-11-new" />
+ <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="stable-perf" />
+
+ <!-- Clang-14 Toolchain -->
+ <project path="prebuilts/clang/host/linux-x86/clang-14" name="GhostMaster69-dev/Cosmic-Clang.git" remote="gitlab" revision="main" clone-depth="1" />
+
+ <!-- Packages -->
+ <project path="packages/apps/Dirac" name="Havoc-OS/android_packages_apps_Dirac" remote="github" revision="pie" />
+ <project path="packages/apps/GCamGOPrebuilt" name="ArrowOS-Devices/android_packages_apps_GCamGOPrebuilt" remote="github" revision="arrow-12.0" />
+
+ <!-- Hals -->
+ <remove-project name="android_hardware_qcom_media" />
+ <remove-project name="android_hardware_qcom_audio" />
+ <remove-project name="android_hardware_qcom_display" />
+ <project path="hardware/qcom-caf/msm8996/display" name="GhostMaster69-dev/hardware_qcom-caf_msm8996-r_display" remote="github" revision="eleven" />
+ <project path="hardware/qcom-caf/msm8996/media" name="GhostMaster69-dev/hardware_qcom-caf_msm8996-r_media" remote="github" revision="eleven" />
+ <project path="hardware/qcom-caf/msm8996/audio" name="GhostMaster69-dev/hardware_qcom-caf_msm8996-r_audio" remote="github" revision="eleven" />
+
+</manifest>
