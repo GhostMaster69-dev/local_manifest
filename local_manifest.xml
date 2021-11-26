@@ -23,6 +23,9 @@
  <project path="hardware/qcom-caf/msm8996/audio" name="GhostMaster69-dev/hardware_qcom-caf_msm8996-r_audio" remote="github" revision="eleven" />
  <project path="hardware/qcom-caf/wlan" name="GhostMaster69-dev/android_hardware_qcom_wlan" remote="github" revision="android_12-caf" />
 
+ <!-- SnapCamera -->
+ <project path="packages/apps/Snap" name="LineageOS/android_packages_apps_Snap" remote="github" revision="lineage-18.1"/>
+
  <!-- Sepolicy -->
  <project path="device/qcom/sepolicy-legacy-um" name="Octavi-OS/platform_device_qcom_sepolicy-legacy-um" remote="github" revision="12" />
 
