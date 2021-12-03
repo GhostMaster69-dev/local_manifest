@@ -27,7 +27,8 @@
  <project path="hardware/qcom-caf/wlan" name="GhostMaster69-dev/android_hardware_qcom_wlan" remote="github" revision="android_12-caf" />
 
  <!-- Sepolicy -->
- <project path="device/qcom/sepolicy-legacy-um" name="Octavi-OS/platform_device_qcom_sepolicy-legacy-um" remote="github" revision="12" />
+ <remove-project name="platform_device_qcom_sepolicy-legacy-um" />
+ <project path="device/qcom/sepolicy-legacy-um" name="GhostMaster69-dev/platform_device_qcom_sepolicy-legacy-um" remote="github" revision="octavi-12-new" />
 
  <!-- Vendor -->
  <remove-project name="LineageOS/android_vendor_qcom_opensource_fm-commonsys" />
