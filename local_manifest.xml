@@ -1,37 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
- <!-- GitLab -->
- <remote  name="Gitlab"
-	 fetch="https://gitlab.com/" />
- 
- <!-- Trees -->
- <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="octavi-12-new" />
- <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="octavi-12-new" />
- <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="stable-perf" />
-
- <!-- Cosmic-Clang v14.0.0 Toolchain -->
- <project path="prebuilts/clang/host/linux-x86/clang-14" name="GhostMaster69-dev/Cosmic-Clang.git" remote="Gitlab" revision="main" clone-depth="1" />
-
  <!-- GCamGo -->
  <project path="packages/apps/GCamGOPrebuilt" name="ArrowOS-Devices/android_packages_apps_GCamGOPrebuilt" remote="github" revision="arrow-12.0" />
 
- <!-- Hals -->
- <remove-project name="LineageOS/android_hardware_qcom_media" />
- <remove-project name="LineageOS/android_hardware_qcom_audio" />
- <remove-project name="LineageOS/android_hardware_qcom_display" />
- <remove-project name="platform_hardware_qcom_wlan" />
+ <!-- Trees -->
+ <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="12" />
+ <project path="device/xiaomi/msm8953-common" name="GhostMaster69-dev/android_device_xiaomi_msm8953-common" remote="github" revision="12" />
+ <project path="vendor/xiaomi" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="12" />
+ <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="stable-perf" />
+
+ <!-- Remove and Clone Hals -->
+ <remove-project name="android_hardware_qcom_display" />
+ <remove-project name="android_hardware_qcom_wlan" />
  <project path="hardware/qcom-caf/msm8996/display" name="GhostMaster69-dev/hardware_qcom-caf_msm8996-r_display" remote="github" revision="eleven" />
- <project path="hardware/qcom-caf/msm8996/media" name="GhostMaster69-dev/hardware_qcom-caf_msm8996-r_media" remote="github" revision="eleven" />
- <project path="hardware/qcom-caf/msm8996/audio" name="GhostMaster69-dev/hardware_qcom-caf_msm8996-r_audio" remote="github" revision="eleven" />
  <project path="hardware/qcom-caf/wlan" name="GhostMaster69-dev/android_hardware_qcom_wlan" remote="github" revision="android_12-caf" />
 
- <!-- Sepolicy -->
- <remove-project name="platform_device_qcom_sepolicy-legacy-um" />
- <project path="device/qcom/sepolicy-legacy-um" name="GhostMaster69-dev/platform_device_qcom_sepolicy-legacy-um" remote="github" revision="octavi-12-new" />
-
- <!-- Vendor -->
- <remove-project name="LineageOS/android_vendor_qcom_opensource_fm-commonsys" />
- <project path="vendor/qcom/opensource/fm-commonsys" name="GhostMaster69-dev/android_vendor_qcom_opensource_fm-commonsys" remote="github" revision="arrow-12.0" />
+ <!-- Toolchain -->
+ <project path="prebuilts/clang/host/linux-x86/cosmic-clang" name="GhostMaster69-dev/Cosmic-Clang.git" remote="gitlab" revision="main" clone-depth="1" />
 
 </manifest>
