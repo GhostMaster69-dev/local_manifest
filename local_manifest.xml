@@ -18,7 +18,7 @@
  <project path="prebuilts/clang/host/linux-x86/clang-14" name="GhostMaster69-dev/Cosmic-Clang.git" remote="Gitlab" revision="main" />
 
  <!-- Packages -->
- <project path="packages/apps" name="GhostMaster69-dev/android_packages_apps" remote="github" revision="main" />
+ <project path="packages/apps/CameraGo" name="GhostMaster69-dev/android_packages_apps_CameraGo" remote="github" revision="main" />
 
  <!-- Hals -->
  <remove-project name="LineageOS/android_hardware_qcom_media" />
