@@ -10,9 +10,9 @@
  <project path="vendor/octavi" name="GhostMaster69-dev/platform_vendor_octavi" remote="github" revision="12" />
 
  <!-- Trees -->
- <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="octavi-12-new" />
- <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="octavi-12-new" />
- <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="stable" />
+ <project path="device/xiaomi/mido" name="GhostMaster69-dev/android_device_xiaomi_mido" remote="github" revision="Octavi-OS-12" />
+ <project path="vendor/xiaomi/mido" name="GhostMaster69-dev/android_vendor_xiaomi_mido" remote="github" revision="Octavi-OS-12" />
+ <project path="kernel/xiaomi/mido" name="GhostMaster69-dev/android_kernel_xiaomi_mido" remote="github" revision="stable" />
 
  <!-- Cosmic-Clang v14.0.0 Toolchain -->
  <project path="prebuilts/clang/host/linux-x86/clang-14" name="GhostMaster69-dev/Cosmic-Clang.git" remote="Gitlab" revision="main" />
