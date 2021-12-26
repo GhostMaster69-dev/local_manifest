@@ -5,10 +5,6 @@
  <remote  name="Gitlab"
 	 fetch="https://gitlab.com/" />
 
- <!-- Vendor Octavi -->
- <remove-project name="platform_vendor_octavi" />
- <project path="vendor/octavi" name="GhostMaster69-dev/platform_vendor_octavi" remote="github" revision="12" />
-
  <!-- Trees -->
  <project path="device/xiaomi/mido" name="GhostMaster69-dev/android_device_xiaomi_mido" remote="github" revision="Octavi-OS-12" />
  <project path="vendor/xiaomi/mido" name="GhostMaster69-dev/android_vendor_xiaomi_mido" remote="github" revision="Octavi-OS-12" />
