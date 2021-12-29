@@ -17,13 +17,7 @@
  <project path="packages/apps/CameraGo" name="GhostMaster69-dev/android_packages_apps_CameraGo" remote="github" revision="main" />
 
  <!-- Hals -->
- <remove-project name="LineageOS/android_hardware_qcom_media" />
- <remove-project name="LineageOS/android_hardware_qcom_audio" />
- <remove-project name="LineageOS/android_hardware_qcom_display" />
  <remove-project name="platform_hardware_qcom_wlan" />
- <project path="hardware/qcom-caf/msm8996/display" name="GhostMaster69-dev/android_hardware_qcom_display" remote="github" revision="android-12.0-caf-4.9-S" />
- <project path="hardware/qcom-caf/msm8996/media" name="GhostMaster69-dev/android_hardware_qcom_media" remote="github" revision="android-12.0-caf-4.9-S" />
- <project path="hardware/qcom-caf/msm8996/audio" name="GhostMaster69-dev/android_hardware_qcom_audio" remote="github" revision="android-12.0-caf-4.9-R" />
  <project path="hardware/qcom-caf/wlan" name="GhostMaster69-dev/android_hardware_qcom_wlan" remote="github" revision="android-12.0-caf-4.9-S" />
 
  <!-- Sepolicy -->
