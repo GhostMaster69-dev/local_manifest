@@ -22,5 +22,5 @@
 
  <!-- Sepolicy -->
  <remove-project name="platform_device_qcom_sepolicy-legacy-um" />
- <project path="device/qcom/sepolicy-legacy-um" name="GhostMaster69-dev/android_device_qcom_sepolicy" remote="github" revision="octavi-12-caf-4.9-S" />
+ <project path="device/qcom/sepolicy-legacy-um" name="GhostMaster69-dev/android_device_qcom_sepolicy" remote="github" revision="octavi-12-caf-4.9-S-new" />
 </manifest>
