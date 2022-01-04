@@ -15,6 +15,7 @@
 
  <!-- Packages -->
  <project path="packages/apps/CameraGo" name="GhostMaster69-dev/android_packages_apps_CameraGo" remote="github" revision="main" />
+ <project path="packages/apps/FMRadio" name="GhostMaster69-dev/packages_apps_FMRadio" remote="github" revision="twelve" />
 
  <!-- Hals -->
  <remove-project name="platform_hardware_qcom_wlan" />
