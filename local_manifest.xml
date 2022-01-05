@@ -6,8 +6,8 @@
 	 fetch="https://gitlab.com/" />
 
  <!-- Trees -->
- <project path="device/xiaomi/mido" name="GhostMaster69-dev/android_device_xiaomi_mido" remote="github" revision="test-12" />
- <project path="vendor/xiaomi/mido" name="GhostMaster69-dev/android_vendor_xiaomi_mido" remote="github" revision="test-12" />
+ <project path="device/xiaomi/mido" name="GhostMaster69-dev/android_device_xiaomi_mido" remote="github" revision="Octavi-OS-12" />
+ <project path="vendor/xiaomi/mido" name="GhostMaster69-dev/android_vendor_xiaomi_mido" remote="github" revision="Octavi-OS-12" />
  <project path="kernel/xiaomi/mido" name="GhostMaster69-dev/android_kernel_xiaomi_mido" remote="github" revision="stable" />
 
  <!-- Cosmic-Clang v14.0.0 Toolchain -->
@@ -22,5 +22,5 @@
 
  <!-- Sepolicy -->
  <remove-project name="platform_device_qcom_sepolicy-legacy-um" />
- <project path="device/qcom/sepolicy-legacy-um" name="GhostMaster69-dev/android_device_qcom_sepolicy" remote="github" revision="octavi-12-caf-4.9-S" />
+ <project path="device/qcom/sepolicy-legacy-um" name="GhostMaster69-dev/android_device_qcom_sepolicy" remote="github" revision="octavi-12-caf-4.9-S-new" />
 </manifest>
