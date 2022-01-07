@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
- <!-- Trees -->
- <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="RR-Q" />
- <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="RR-Q" />
- <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="stable-perf" />
+ <!-- Toolchain -->
+ <remote name="cosmic"
+	 fetch="https://gitlab.com/GhostMaster69-dev"
+	 revision="master" />
 
- <!-- Cosmic-Clang v14.0.0 Toolchain -->
- <project path="prebuilts/clang/host/linux-x86/clang-14" name="GhostMaster69-dev/Cosmic-Clang" remote="github" revision="main" clone-depth="1" />
+ <!-- Trees -->
+ <project path="device/xiaomi/vince" name="GhostMaster69-dev/device_xiaomi_vince" remote="github" revision="10" />
+ <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/vendor_xiaomi_vince" remote="github" revision="10" />
+ <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="12" />
+
+ <!-- Cosmic clang Toolchain -->
+ <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="cosmic-clang" remote="cosmic" clone-depth="1" />
 </manifest>
