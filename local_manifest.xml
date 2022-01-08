@@ -21,6 +21,10 @@
  <remove-project name="platform_hardware_qcom_wlan" />
  <project path="hardware/qcom-caf/wlan" name="GhostMaster69-dev/android_hardware_qcom_wlan" remote="github" revision="android-12.0-caf-4.9-S" />
 
+ <!-- hardware -->
+ <remove-project name="platform_hardware_ril" />
+ <project path="hardware/ril" name="GhostMaster69-dev/platform_hardware_ril" remote="github" revision="12" />
+
  <!-- Sepolicy -->
  <remove-project name="platform_system_sepolicy" />
  <remove-project name="platform_device_qcom_sepolicy-legacy-um" />
