@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- GitLab -->
+ <remote  name="Gitlab"
+	 fetch="https://gitlab.com/" />
+ 
+ <!-- Trees -->
+ <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="radiant-12-main" />
+ <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="radiant-12-main" />
+ <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="arrow-12.0" />
+
+ <!-- Clang Toolchain -->
+ <project path="prebuilts/clang/host/linux-x86/clang-14" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1" />
+
+ <!-- Packages -->
+ <project path="packages/apps/CameraGo" name="GhostMaster69-dev/android_packages_apps_CameraGo" remote="github" revision="main" />
+ <project path="packages/apps/FMRadio" name="GhostMaster69-dev/android_packages_apps_FMRadio" remote="github" revision="12" />
+ <project path="vendor/qcom/opensource/libfmjni" name="GhostMaster69-dev/vendor_qcom_opensource_libfmjni" remote="github" revision="twelve" />
+
+ <!-- Hals -->
+ <remove-project name="android_hardware_qcom_wlan" />
+ <project path="hardware/qcom-caf/wlan" name="GhostMaster69-dev/android_hardware_qcom_wlan" remote="github" revision="android-12.0-caf-4.9-S" />
+
+ <!-- Sepolicy -->
+ <remove-project name="device_qcom_sepolicy" />
+ <project path="device/qcom/sepolicy-legacy-um" name="GhostMaster69-dev/android_device_qcom_sepolicy" remote="github" revision="radiant-12-caf-4.9-S" />
+</manifest>
