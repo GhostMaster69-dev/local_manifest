@@ -6,8 +6,8 @@
 	 fetch="https://gitlab.com/" />
  
  <!-- Trees -->
- <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="octavi-12-main" />
- <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="octavi-12-main" />
+ <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="shapeshift-12-main" />
+ <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="shapeshift-12-main" />
  <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="arrow-12.0" />
 
  <!-- Cosmic-Clang v14.0.0 Toolchain -->
@@ -18,10 +18,10 @@
  <project path="packages/apps/FMRadio" name="GhostMaster69-dev/android_packages_apps_FMRadio" remote="github" revision="12" />
 
  <!-- Hals -->
- <remove-project name="platform_hardware_qcom_wlan" />
+ <remove-project name="android_hardware_qcom_wlan" />
  <project path="hardware/qcom-caf/wlan" name="GhostMaster69-dev/android_hardware_qcom_wlan" remote="github" revision="android-12.0-caf-4.9-S" />
 
  <!-- Sepolicy -->
- <remove-project name="platform_device_qcom_sepolicy-legacy-um" />
- <project path="device/qcom/sepolicy-legacy-um" name="GhostMaster69-dev/android_device_qcom_sepolicy" remote="github" revision="octavi-12-caf-4.9-S-new" />
+ <remove-project name="android_device_qcom_sepolicy" />
+ <project path="device/qcom/sepolicy-legacy-um" name="GhostMaster69-dev/android_device_qcom_sepolicy" remote="github" revision="shapeshift-12-caf-4.9-S" />
 </manifest>
