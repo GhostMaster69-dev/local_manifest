@@ -24,5 +24,7 @@
 
  <!-- Sepolicy -->
  <remove-project name="device_qcom_sepolicy" />
+ <remove-project name="system_sepolicy" />
  <project path="device/qcom/sepolicy-legacy-um" name="GhostMaster69-dev/android_device_qcom_sepolicy" remote="github" revision="radiant-12-caf-4.9-S" />
+ <project path="system/sepolicy" name="GhostMaster69-dev/system_sepolicy" remote="github" revision="twelve" />
 </manifest>
