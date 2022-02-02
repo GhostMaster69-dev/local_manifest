@@ -8,7 +8,7 @@
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="radiant-12-main" />
  <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="radiant-12-main" />
- <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="arrow-12.0" />
+ <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="12" />
 
  <!-- Clang Toolchain -->
  <project path="prebuilts/clang/host/linux-x86/clang-14" name="GhostMaster69-dev/Cosmic-Clang" remote="Gitlab" revision="main" clone-depth="1" />
