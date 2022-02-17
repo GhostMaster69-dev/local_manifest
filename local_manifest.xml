@@ -19,6 +19,7 @@
  <project path="vendor/qcom/opensource/libfmjni" name="GhostMaster69-dev/vendor_qcom_opensource_libfmjni" remote="github" revision="twelve" />
 
  <!-- Hals -->
+ <remove-project name="android_hardware_qcom_display" />
  <remove-project name="android_hardware_qcom_wlan" />
  <project path="hardware/qcom-caf/wlan" name="GhostMaster69-dev/android_hardware_qcom_wlan" remote="github" revision="android-12.0-caf-4.9-S" />
 
