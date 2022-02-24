@@ -11,7 +11,7 @@
  <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="stable" />
 
  <!-- Cosmic-Clang v14.0.0 Toolchain -->
- <project path="prebuilts/clang/host/linux-x86/clang-14" name="GhostMaster69-dev/Cosmic-Clang.git" remote="Gitlab" revision="main" clone-depth="1" />
+ <project path="prebuilts/clang/host/linux-x86/clang-14" name="GhostMaster69-dev/Cosmic-Clang.git" remote="Gitlab" revision="experimental" clone-depth="1" />
 
  <!-- Packages -->
  <project path="packages/apps/CameraGo" name="GhostMaster69-dev/android_packages_apps_CameraGo" remote="github" revision="main" />
