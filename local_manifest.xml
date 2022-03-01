@@ -17,6 +17,10 @@
  <project path="packages/apps/CameraGo" name="GhostMaster69-dev/android_packages_apps_CameraGo" remote="github" revision="main" />
  <project path="packages/apps/FMRadio" name="GhostMaster69-dev/android_packages_apps_FMRadio" remote="github" revision="12" />
 
+ <!-- Framework -->
+ <remove-project name="platform_frameworks_opt_telephony" />
+ <project path="frameworks/opt/telephony" name="GhostMaster69-dev/platform_frameworks_opt_telephony" remote="github" revision="12" />
+
  <!-- Hals -->
  <remove-project name="platform_hardware_qcom_wlan" />
  <project path="hardware/qcom-caf/wlan" name="GhostMaster69-dev/android_hardware_qcom_wlan" remote="github" revision="android-12.0-caf-4.9-S" />
