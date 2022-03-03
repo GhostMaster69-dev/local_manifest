@@ -4,7 +4,12 @@
  <!-- GitLab -->
  <remote  name="Gitlab"
 	 fetch="https://gitlab.com/" />
- 
+
+ <!-- Silicon-OS -->
+ <remote  name="silicon"
+          fetch="https://github.com/SiliconOS/"
+          revision="12" />
+
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="octavi-12-main" />
  <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="octavi-12-main" />
@@ -16,6 +21,16 @@
  <!-- Packages -->
  <project path="packages/apps/CameraGo" name="GhostMaster69-dev/android_packages_apps_CameraGo" remote="github" revision="main" />
  <project path="packages/apps/FMRadio" name="GhostMaster69-dev/android_packages_apps_FMRadio" remote="github" revision="12" />
+
+ <!-- Faceunlock -->
+ <remove-project name="platform_packages_apps_Settings" />
+ <remove-project name="platform_vendor_octavi" />
+ <remove-project name="platform_frameworks_base" />
+ <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="silicon" />
+ <project path="vendor/octavi" name="platform_vendor_octavi" remote="silicon" />
+ <project path="frameworks/base" name="platform_frameworks_base" remote="silicon" />
+ <project path="external/faceunlock" name="platform_external_faceunlock" remote="silicon" />
+ <project path="packages/apps/FaceUnlockService" name="platform_packages_apps_FaceUnlockService" remote="silicon" />
 
  <!-- Framework -->
  <remove-project name="platform_frameworks_opt_telephony" />
