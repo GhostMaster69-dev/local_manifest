@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
- <!-- GitLab -->
- <remote  name="Gitlab"
-	 fetch="https://gitlab.com/" />
+ <!-- Toolchain -->
+ <remote name="cosmic"
+	 fetch="https://gitlab.com/GhostMaster69-dev"
+	 revision="master" />
 
  <!-- Silicon-OS -->
- <remote  name="silicon"
-          fetch="https://github.com/SiliconOS/"
-          revision="12" />
+ <remote name="silicon"
+	 fetch="https://github.com/AOSP-Silicon/"
+	 revision="12" />
 
  <!-- Trees -->
- <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="12" />
- <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="12" />
- <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="stable" />
+ <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="silicon" />
+ <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="silicon" />
+ <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="silicon" />
 
  <!-- Cosmic clang Toolchain -->
- <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="GhostMaster69-dev/Cosmic-Clang.git" remote="Gitlab" revision="master" clone-depth="1" />
+ <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="Cosmic-Clang" remote="cosmic" clone-depth="1" />
 
  <!-- Packages -->
- <project path="packages/apps/CameraGo" name="GhostMaster69-dev/android_packages_apps_CameraGo" remote="github" revision="main" />
- <project path="packages/apps/FMRadio" name="GhostMaster69-dev/android_packages_apps_FMRadio" remote="github" revision="12" />
+ <project path="packages/apps/CameraGo" name="android_packages_apps_CameraGo" remote="silicon" />
+ <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="silicon" />
 
  <!-- Faceunlock -->
  <remove-project name="platform_packages_apps_Settings" />
  <remove-project name="platform_vendor_octavi" />
  <remove-project name="platform_frameworks_base" />
- <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="silicon" />
- <project path="vendor/octavi" name="platform_vendor_octavi" remote="silicon" />
- <project path="frameworks/base" name="platform_frameworks_base" remote="silicon" />
- <project path="external/faceunlock" name="platform_external_faceunlock" remote="silicon" />
- <project path="packages/apps/FaceUnlockService" name="platform_packages_apps_FaceUnlockService" remote="silicon" />
+ <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="silicon" />
+ <project path="vendor/octavi" name="android_vendor_octavi" remote="silicon" />
+ <project path="frameworks/base" name="android_frameworks_base" remote="silicon" />
+ <project path="external/faceunlock" name="android_external_faceunlock" remote="silicon" />
+ <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="silicon" />
 
  <!-- Framework -->
  <remove-project name="platform_frameworks_opt_telephony" />
- <project path="frameworks/opt/telephony" name="GhostMaster69-dev/platform_frameworks_opt_telephony" remote="github" revision="12" />
+ <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="silicon" />
 
  <!-- Sepolicy -->
  <remove-project name="platform_device_qcom_sepolicy-legacy-um" />
- <project path="device/qcom/sepolicy-legacy-um" name="GhostMaster69-dev/android_device_qcom_sepolicy" remote="github" revision="octavi-12-caf-4.9-S-new" />
+ <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="silicon" />
+
 </manifest>
