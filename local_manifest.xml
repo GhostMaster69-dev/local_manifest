@@ -36,10 +36,6 @@
  <remove-project name="platform_frameworks_opt_telephony" />
  <project path="frameworks/opt/telephony" name="GhostMaster69-dev/platform_frameworks_opt_telephony" remote="github" revision="12" />
 
- <!-- Hals -->
- <remove-project name="platform_hardware_qcom_wlan" />
- <project path="hardware/qcom-caf/wlan" name="GhostMaster69-dev/android_hardware_qcom_wlan" remote="github" revision="android-12.0-caf-4.9-S" />
-
  <!-- Sepolicy -->
  <remove-project name="platform_device_qcom_sepolicy-legacy-um" />
  <project path="device/qcom/sepolicy-legacy-um" name="GhostMaster69-dev/android_device_qcom_sepolicy" remote="github" revision="octavi-12-caf-4.9-S-new" />
