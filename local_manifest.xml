@@ -5,6 +5,18 @@
  <remote name="cosmic"
 	 fetch="https://gitlab.com/GhostMaster69-dev" />
 
+ <!-- Build -->
+ <remove-project name="platform_build" />
+ <project path="build/make" name="GhostMaster69-dev/platform_build" remote="github" revision="12.0" >
+   <copyfile src="core/root.mk" dest="Makefile" />
+   <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+   <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+   <linkfile src="core" dest="build/core" />
+   <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+   <linkfile src="target" dest="build/target" />
+   <linkfile src="tools" dest="build/tools" />
+ </project>
+
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="syberia/12" />
  <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="syberia/12" />
