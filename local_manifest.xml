@@ -25,4 +25,8 @@
  <!-- Sepolicy -->
  <project path="device/qcom/sepolicy-legacy-um" name="GhostMaster69-dev/android_device_qcom_sepolicy-legacy-um" remote="github" revision="syberia/12" />
 
+ <!-- APP INFO FORCE CLOSE bug -->
+ <remove-project name="platform_packages_apps_Settings"/>
+ <project path="packages/apps/Settings" name="GhostMaster69-dev/platform_packages_apps_Settings-1" remote="github" revision="12.0"/>
+
 </manifest>
