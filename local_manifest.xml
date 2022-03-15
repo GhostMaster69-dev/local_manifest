@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
- <!-- GitLab -->
- <remote  name="Gitlab"
+ <!-- Toolchain -->
+ <remote  name="cosmic"
 	 fetch="https://gitlab.com/" />
  
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="GhostMaster69-dev/android_device_xiaomi_vince" remote="github" revision="radiant/12" />
  <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/android_vendor_xiaomi_vince" remote="github" revision="radiant/12" />
- <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="stable" />
+ <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="12" />
 
  <!-- Clang Toolchain -->
- <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="GhostMaster69-dev/Cosmic-Clang" remote="Gitlab" revision="master" clone-depth="1" />
+ <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="GhostMaster69-dev/cosmic-clang" remote="cosmic" revision="master" clone-depth="1" />
 
  <!-- Packages -->
  <project path="packages/apps/CameraGo" name="GhostMaster69-dev/android_packages_apps_CameraGo" remote="github" revision="main" />
