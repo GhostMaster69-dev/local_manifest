@@ -21,6 +21,10 @@
  <!-- Cosmic clang Toolchain -->
  <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="cosmic-clang" remote="cosmic" clone-depth="1" />
 
+ <!-- Frameworks -->
+ <remove-project name="platform_frameworks_av" />
+ <project path="frameworks/av" name="platform_frameworks_av" remote="silicon" />
+
  <!-- Packages -->
  <project path="packages/apps/CameraGo" name="android_packages_apps_CameraGo" remote="silicon" />
  <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="silicon" />
