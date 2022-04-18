@@ -36,6 +36,10 @@
  <project path="external/faceunlock" name="android_external_faceunlock" remote="silicon" />
  <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="silicon" />
 
+ <!-- Lawnchair -->
+ <remove-project name="platform_vendor_lawnchair" />
+ <project path="vendor/lawnchair" name="platform_vendor_lawnchair" remote="silicon" />
+
  <!-- Sepolicy -->
  <remove-project name="platform_device_qcom_sepolicy-legacy-um" />
  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="silicon" />
