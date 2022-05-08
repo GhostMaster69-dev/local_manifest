@@ -3,14 +3,15 @@
 
  <!-- Toolchain -->
  <remote name="cosmic"
-	 fetch="https://gitlab.com/GhostMaster69-dev"
-	 revision="master" />
+	 fetch="https://gitlab.com/GhostMaster69-dev/cosmic-clang"
+	 revision="master"
+	 clone-depth="1" />
 
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="GhostMaster69-dev/device_xiaomi_vince" remote="github" revision="10" />
  <project path="vendor/xiaomi/vince" name="GhostMaster69-dev/vendor_xiaomi_vince" remote="github" revision="10" />
- <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="12" />
+ <project path="kernel/xiaomi/vince" name="AOSP-Silicon/android_kernel_xiaomi_vince" remote="github" revision="12" />
 
  <!-- Cosmic clang Toolchain -->
- <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="cosmic-clang" remote="cosmic" clone-depth="1" />
+ <project path="prebuilts/clang/host/linux-x86/clang-cosmic" remote="cosmic" />
 </manifest>
