@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
- <remote name="Aosp"
-	 fetch="https://android.googlesource.com"
-	 review="android-review.googlesource.com"
-	 revision="refs/tags/android-12.1.0_r0.22"/>
-
  <!-- Toolchain -->
  <remote name="cosmic"
 	 fetch="https://gitlab.com/GhostMaster69-dev"
@@ -18,7 +13,4 @@
 
  <!-- Cosmic clang Toolchain -->
  <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="cosmic-clang" remote="cosmic" clone-depth="1" />
-
- <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" />
- <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" groups="pdk,linux" clone-depth="1" remote="Aosp" />
 </manifest>
