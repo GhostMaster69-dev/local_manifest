@@ -40,6 +40,10 @@
  <project path="external/faceunlock" name="android_external_faceunlock" remote="silicon" />
  <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="silicon" />
 
+ <!-- Framework -->
+ <remove-project name="platform_frameworks_opt_telephony" />
+ <project path="frameworks/opt/telephony" name="lineage_frameworks_opt_telephony" remote="silicon" />
+
  <!-- GMS -->
  <remove-project name="platform_vendor_gms" />
  <project path="vendor/gms" name="platform_vendor_gms" remote="gms" clone-depth="1" />
