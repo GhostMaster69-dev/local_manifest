@@ -15,8 +15,8 @@
 	 revision="master" />
 
  <!-- Trees -->
- <project path="device/xiaomi/vince" name="device_xiaomi_vince" remote="me" revision="12" />
- <project path="vendor/xiaomi/vince" name="vendor_xiaomi_vince" remote="me" revision="12" />
+ <project path="device/xiaomi/vince" name="device_xiaomi_vince" remote="me" revision="12.1" />
+ <project path="vendor/xiaomi/vince" name="vendor_xiaomi_vince" remote="me" revision="12.1" />
  <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="silicon" revision="12" />
 
  <!-- Cosmic clang Toolchain -->
@@ -30,10 +30,10 @@
  <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" remote="me" revision="lineage-18.1" />
 
  <!-- Framework -->
- <remove-project name="frameworks_opt_telephony" />
+ <remove-project name="platform/frameworks/opt/telephony" />
  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="lineage" />
 
  <!-- Wlan -->
- <remove-project name="hardware_qcom-caf_wlan" />
+ <remove-project name="android_hardware_qcom-caf_wlan" />
  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="me" revision="android-12.0-caf-4.9-S" />
 </manifest>
