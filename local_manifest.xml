@@ -19,6 +19,10 @@
  <project path="vendor/xiaomi/vince" name="vendor_xiaomi_vince" remote="me" revision="12.1" />
  <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="silicon" revision="12" />
 
+ <!-- Bootable Recovery -->
+ <remove-project name="android_bootable_recovery" />
+ <project path="bootable/recovery" name="android_bootable_recovery" remote="me" revision="twelvedotone" />
+
  <!-- Cosmic clang Toolchain -->
  <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="cosmic-clang" remote="cosmic" clone-depth="1" />
 
