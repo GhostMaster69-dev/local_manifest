@@ -29,6 +29,18 @@
  <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="silicon" revision="12"  />
  <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" remote="me" revision="lineage-18.1" />
 
+ <!-- build/make -->
+ <remove-project name="build_make" />
+ <project path="build/make" name="build_make" remote="me" revision="A12" >
+     <copyfile src="core/root.mk" dest="Makefile" />
+     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+     <linkfile src="core" dest="build/core" />
+     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+     <linkfile src="target" dest="build/target" />
+     <linkfile src="tools" dest="build/tools" />
+ </project>
+
  <!-- Framework -->
  <remove-project name="frameworks_opt_telephony" />
  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="lineage" />
