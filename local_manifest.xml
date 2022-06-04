@@ -15,8 +15,8 @@
 	 revision="master" />
 
  <!-- Trees -->
- <project path="device/xiaomi/vince" name="device_xiaomi_vince" remote="me" revision="superior-twelve" />
- <project path="vendor/xiaomi/vince" name="vendor_xiaomi_vince" remote="me" revision="superior-twelve" />
+ <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="silicon" revision="superior-twelve" />
+ <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="silicon" revision="superior-twelve" />
  <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="silicon" revision="12" />
 
  <!-- Cosmic clang Toolchain -->
