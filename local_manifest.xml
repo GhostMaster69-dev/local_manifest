@@ -15,9 +15,9 @@
 	 revision="master" />
 
  <!-- Trees -->
- <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="silicon" revision="12.1" />
- <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="silicon" revision="12.1" />
- <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="silicon" revision="12.1" />
+ <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="silicon" revision="krypton-twelve" />
+ <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="silicon" revision="krypton-twelve" />
+ <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="silicon" revision="12" />
 
  <!-- Cosmic clang Toolchain -->
  <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="cosmic-clang" remote="cosmic" clone-depth="1" />
