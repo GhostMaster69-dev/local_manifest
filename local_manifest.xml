@@ -25,10 +25,6 @@
  <!-- CameraGo -->
  <project path="packages/apps/CameraGo" name="android_packages_apps_CameraGo" remote="silicon" revision="12" />
 
- <!-- AOSP FM -->
- <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="silicon" revision="12"  />
- <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" remote="me" revision="lineage-18.1" />
-
  <!-- Framework -->
  <remove-project name="platform/frameworks/opt/telephony" />
  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="lineage" />
