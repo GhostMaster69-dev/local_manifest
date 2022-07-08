@@ -9,10 +9,9 @@
  <remote name="silicon"
 	 fetch="https://github.com/AOSP-Silicon" />
 
- <!-- Toolchain -->
- <remote name="cosmic"
-	 fetch="https://gitlab.com/GhostMaster69-dev"
-	 revision="master" />
+ <!-- gitlab -->
+ <remote name="gitlab-me"
+	 fetch="https://gitlab.com/GhostMaster69-dev" />
 
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="silicon" revision="superior-twelve" />
@@ -20,7 +19,7 @@
  <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="silicon" revision="12" />
 
  <!-- Cosmic clang Toolchain -->
- <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="cosmic-clang" remote="cosmic" clone-depth="1" />
+ <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="llvm-clang" remote="gitlab-me" revision="14.x.x" clone-depth="1" />
 
  <!-- CameraGo -->
  <project path="packages/apps/CameraGo" name="android_packages_apps_CameraGo" remote="silicon" revision="12" />
