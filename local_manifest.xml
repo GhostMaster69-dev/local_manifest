@@ -21,9 +21,6 @@
  <!-- Cosmic clang Toolchain -->
  <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="llvm-clang" remote="gitlab-me" revision="14.x.x" clone-depth="1" />
 
- <!-- CameraGo -->
- <project path="packages/apps/CameraGo" name="android_packages_apps_CameraGo" remote="silicon" revision="12" />
-
  <!-- Framework -->
  <remove-project name="platform/frameworks/opt/telephony" />
  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="lineage" />
