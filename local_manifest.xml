@@ -19,7 +19,7 @@
  <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="silicon" revision="12" />
 
  <!-- Cosmic clang Toolchain -->
- <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="llvm-clang" remote="gitlab-me" revision="14.x.x" clone-depth="1" />
+ <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="llvm-clang" remote="gitlab-me" revision="master" clone-depth="1" />
 
  <!-- Framework -->
  <remove-project name="platform/frameworks/opt/telephony" />
