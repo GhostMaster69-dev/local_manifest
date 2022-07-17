@@ -26,6 +26,9 @@
  <remove-project name="platform/frameworks/opt/telephony" />
  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="lineage" />
 
+ <remove-project name="android_frameworks_base" />
+ <project path="frameworks/base" name="android_frameworks_base" remote="silicon" revision="twelvedotone" />
+
  <!-- Vendor -->
  <remove-project name="android_vendor_superior" />
  <project path="vendor/superior" name="android_vendor_superior" remote="silicon" revision="twelvedotone" />
