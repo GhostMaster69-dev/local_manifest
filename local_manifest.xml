@@ -21,6 +21,17 @@
  <!-- Cosmic clang Toolchain -->
  <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="llvm-clang" remote="gitlab-me" revision="master" clone-depth="1" />
 
+ <!-- Build/Make -->
+ <remove-project name="android_build" />
+ <project path="build/make" name="android_build" remote="me" revision="twelvedotone" >
+   <copyfile src="core/root.mk" dest="Makefile" />
+   <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+   <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+   <linkfile src="core" dest="build/core" />
+   <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+   <linkfile src="target" dest="build/target" />
+   <linkfile src="tools" dest="build/tools" />
+ </project>
 
  <!-- Framework -->
  <remove-project name="platform/frameworks/opt/telephony" />
