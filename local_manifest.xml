@@ -21,6 +21,9 @@
  <!-- Cosmic clang Toolchain -->
  <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="llvm-clang" remote="gitlab-me" revision="master" clone-depth="1" />
 
+ <!-- PixelLauncher -->
+ <project path="vendor/PixelLauncher" name="Ardjlon/vendor_PixelLauncher" remote="github" revision="khonsu" />
+
  <!-- Build/Make -->
  <remove-project name="android_build" />
  <project path="build/make" name="android_build" remote="me" revision="twelvedotone" >
