@@ -26,7 +26,7 @@
 
  <!-- Build/Make -->
  <remove-project name="android_build" />
- <project path="build/make" name="android_build" remote="me" revision="twelvedotone" >
+ <project path="build/make" name="android_build" remote="silicon" revision="twelvedotone" >
    <copyfile src="core/root.mk" dest="Makefile" />
    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
