@@ -49,5 +49,5 @@
 
  <!-- Wlan -->
  <remove-project name="android_hardware_qcom-caf_wlan" />
- <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="me" revision="android-12.0-caf-4.9-S" />
+ <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom_wlan" remote="me" revision="LA.UM.10.6.2.r1-01100-89xx.0" />
 </manifest>
