@@ -49,7 +49,7 @@
 
  <!-- Vendor -->
  <remove-project name="android_vendor_superior" />
- <project path="vendor/superior" name="android_vendor_superior" remote="silicon" revision="twelvedotone" />
+ <project path="vendor/superior" name="android_vendor_superior" remote="me" revision="twelvedotone" />
 
  <!-- Wlan -->
  <remove-project name="android_hardware_qcom-caf_wlan" />
