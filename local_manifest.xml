@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- SDM660 (msm-4.19) sources for xiaomi tulip (SDM636) -->
+ <project path="device/xiaomi/tulip" name="GhostMaster69-dev/device_xiaomi_tulip" remote="github" revision="15" />
+ <project path="device/xiaomi/sdm660-common" name="GhostMaster69-dev/device_xiaomi_sdm660-common" remote="github" revision="15" />
+ <project path="vendor/xiaomi/tulip" name="GhostMaster69-dev/vendor_xiaomi_tulip" remote="github" revision="15" />
+ <project path="vendor/xiaomi/sdm660-common" name="GhostMaster69-dev/vendor_xiaomi_sdm660-common" remote="github" revision="15" />
+ <project path="kernel/xiaomi/tulip" name="GhostMaster69-dev/kernel_xiaomi_tulip" remote="github" revision="15" />
+
+ <!-- Android clang -->
+ <project path="prebuilts/clang-latest" name="GhostMaster69-dev/android-clang" remote="gitlab" revision="19.0.1" clone-depth="1" />
+</manifest>
